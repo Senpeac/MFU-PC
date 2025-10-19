@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สมัครสมาชิก | MFU PC</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="register">
+    <header id="site-header"></header>
+
+    <main class="section">
+      <div class="form-container">
+        <h1>สมัครสมาชิกใหม่</h1>
+        <form id="register-form">
+          <input type="text" id="register-name" placeholder="ชื่อ-นามสกุล" required />
+          <input type="email" id="register-email" placeholder="อีเมล" required />
+          <input type="password" id="register-password" placeholder="รหัสผ่าน (อย่างน้อย 6 ตัว)" required />
+          <textarea id="register-address" placeholder="ที่อยู่จัดส่ง"></textarea>
+          <button type="submit" class="btn">สร้างบัญชี</button>
+        </form>
+        <p id="register-message"></p>
+        <p>มีบัญชีแล้ว? <a href="/login.html">เข้าสู่ระบบ</a></p>
+      </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/auth-pages.js"></script>
+  </body>
+</html>

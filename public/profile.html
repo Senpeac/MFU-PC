@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>โปรไฟล์ผู้ใช้ | MFU PC</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="profile">
+    <header id="site-header"></header>
+
+    <main class="section" style="max-width: 900px; margin: 0 auto;">
+      <h1>ข้อมูลบัญชีผู้ใช้</h1>
+      <div class="form-container">
+        <form id="profile-form">
+          <label>ชื่อ-นามสกุล<input type="text" id="profile-name" required /></label>
+          <label>อีเมล<input type="email" id="profile-email" disabled /></label>
+          <label>ที่อยู่จัดส่ง<textarea id="profile-address" rows="3"></textarea></label>
+          <label>เปลี่ยนรหัสผ่าน (ไม่บังคับ)<input type="password" id="profile-password" /></label>
+          <button type="submit" class="btn">บันทึกข้อมูล</button>
+        </form>
+        <p id="profile-message"></p>
+      </div>
+
+      <section style="margin-top: 3rem;">
+        <h2>คำสั่งซื้อของฉัน</h2>
+        <div id="order-history"></div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/profile.js"></script>
+  </body>
+</html>

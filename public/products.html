@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สินค้า | MFU PC</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-page="products">
+    <header id="site-header"></header>
+
+    <main class="section" style="max-width: 1200px; margin: 0 auto;">
+      <h1>สินค้าไอทีทั้งหมด</h1>
+      <div class="filters">
+        <input type="text" id="search-input" placeholder="ค้นหาสินค้า..." />
+        <input type="text" id="category-input" placeholder="หมวดหมู่" />
+        <input type="text" id="brand-input" placeholder="แบรนด์" />
+        <input type="number" id="min-price" placeholder="ราคาขั้นต่ำ" />
+        <input type="number" id="max-price" placeholder="ราคาสูงสุด" />
+        <button id="filter-btn" class="btn">ค้นหา</button>
+      </div>
+
+      <div class="products-grid" id="product-list"></div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/cart-utils.js"></script>
+    <script src="/js/products.js"></script>
+  </body>
+</html>
